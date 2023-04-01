@@ -1,0 +1,19 @@
+CREATE TABLE pet_store (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, stock INTEGER, aisle INTEGER);
+INSERT INTO pet_store VALUES (1, "dog_leash", 6, 20, 2);
+INSERT INTO pet_store VALUES (2, "dog_collar", 5, 19, 2);
+INSERT INTO pet_store VALUES (3, "dog_food", 25, 12, 3);
+INSERT INTO pet_store VALUES (4, "cat_food", 20, 15, 3);
+INSERT INTO pet_store VALUES (5, "bird_food", 14, 10, 3);
+INSERT INTO pet_store VALUES (6, "squeeky_toy", 3, 25, 4);
+INSERT INTO pet_store VALUES (7, "chew_toy", 4, 21, 4);
+INSERT INTO pet_store VALUES (8, "rope_toy", 7, 9, 4);
+INSERT INTO pet_store VALUES (9, "hampster_cage", 52, 5, 5);
+INSERT INTO pet_store VALUES (10, "hampster_wheel", 18, 7, 5);
+INSERT INTO pet_store VALUES (11, "bird_cage", 60, 3, 5);
+INSERT INTO pet_store VALUES (12, "bird_ladder", 20, 4, 5);
+INSERT INTO pet_store VALUES (13, "fish_tank", 45, 8, 6);
+INSERT INTO pet_store VALUES (14, "goldfish", 1, 30, 6);
+INSERT INTO pet_store VALUES (15, "betta_fish", 7, 8, 6);
+
+SELECT * FROM pet_store order by price asc;
+SELECT sum(stock) FROM pet_store;
